@@ -295,3 +295,15 @@ html {
         grid-template-columns: repeat(4, minmax(max-content,200px));
         grid-template-columns: repeat(4, minmax(min-content, max-content));
     }
+
+    .grid-repeat{
+        display: grid;
+        /* Grid de 4c x ?r */
+        grid-template-columns: repeat(4,10% 20% 30% 40%);
+        grid-template-columns: repeat(3,10% 20% 30% 40%);
+        grid-template-columns: repeat(2,10% 20% 30% 40%);
+        grid-template-columns: repeat(1,10% 20% 30% 40%);
+        grid-template-rows: repeat(2,10vh 20vh);
+        grid-template-rows: repeat(2,50px 100px);
+        grid-auto-rows: 150px;
+    }
